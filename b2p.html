@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2P Team - Jeu de Tir Futuriste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: white;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x1080.png'); /* Placeholder for background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #FF5500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #FF7700;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            background-color: #1c1c1c;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            background-color: #2a2a2a;
+        }
+
+        .team .member {
+            width: 23%;
+            text-align: center;
+        }
+
+        .team img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c1c;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #FF5500;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="#">B2P Team</a>
+            <div>
+                <a href="#">Accueil</a>
+                <a href="#">Agents</a>
+                <a href="#">Télécharger</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Rejoignez B2P Team</h1>
+        <p>Le jeu de tir stratégique en équipe où chaque décision compte.</p>
+        <!-- Bouton redirigeant vers Discord -->
+        <a href="https://discord.gg/yawrPy6q" target="_blank">
+            <button>Jouer maintenant</button>
+        </a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container features">
+        <div class="feature">
+            <h3>Stratégie</h3>
+            <p>Chaque agent possède des compétences uniques, permettant de créer des stratégies personnalisées.</p>
+        </div>
+        <div class="feature">
+            <h3>Multijoueur</h3>
+            <p>Affrontez des joueurs du monde entier en mode compétitif et amical.</p>
+        </div>
+        <div class="feature">
+            <h3>Graphismes</h3>
+            <p>Profitez d'une expérience visuelle époustouflante avec des graphismes futuristes et soignés.</p>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container team">
+        <div class="member">
+            <img src="https://via.placeholder.com/300" alt="Agent 1">
+            <h3>Agent 1</h3>
+            <p>Un expert en furtivité et stratégie offensive.</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/300" alt="Agent 2">
+            <h3>Agent 2</h3>
+            <p>Un maître des armes lourdes, avec des compétences dévastatrices.</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/300" alt="Agent 3">
+            <h3>Agent 3</h3>
+            <p>Une experte en soutien, capable de soigner et protéger l'équipe.</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/300" alt="Agent 4">
+            <h3>Agent 4</h3>
+            <p>Un hacker du futur, capable de perturber les systèmes ennemis.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 B2P Team. Tous droits réservés. <a href="#">Mentions légales</a></p>
+    </footer>
+
+</body>
+</html>
